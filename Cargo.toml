@@ -1,0 +1,19 @@
+[package]
+name = "rust-x86-os"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "simple_boot",
+]
+
+[dependencies]
+bootloader = "0.10.12"
+conquer-once = { version = "0.3.2", default-features = false }
+noto-sans-mono-bitmap = "0.1.5"
+raw-cpuid = "10.5.0"
+spinning_top = "0.2.4"
+x86_64 = "0.14.10"
